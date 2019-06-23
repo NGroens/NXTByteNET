@@ -4,7 +4,7 @@ Hier habt ihr das gesamte Webinterface + Frontpage!
 Es ist ein Hosting Interface für TeamSpeak Server und Musikbots.
 
 
-Ich habe die einverändnis des Entwicklers bekommen, dass ich dieses Webinterface veröffentlichen darf.
+Ich habe dieses Interface selbst gekauft und habe somit die rechte das Interface zu veröffentlichen.
 
 Dieses Interface benutzen:
 - NXTByte.net
@@ -12,4 +12,4 @@ Dieses Interface benutzen:
 - PrepaidHost24.eu
 - DallmairIT.de
 
-So und jetzt folgt uns auf Twitter https://twitter.com/realHerrSammy , https://twitter.com/plocicDE.
+So und jetzt folge mir auf Twitter https://twitter.com/realHerrSammy <3 :D
