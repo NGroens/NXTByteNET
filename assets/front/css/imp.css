@@ -1,0 +1,157 @@
+/*
+Theme Name: HUGE
+Description: Creative Coming Soon Template
+Author: SquirrelLabs
+Author URI: https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLab
+Version: 1.0
+License: https://themeforest.net/licenses/standard
+
+---
+
+/*******************************
+  Table of Contents
+
+  1.0 Content Styles
+  2.0 Content Styles
+  3.0 Countdown
+*******************************/
+
+/**********************************/
+/******* 1.0 General Styles *******/
+/**********************************/
+html{
+  min-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(45deg,#130c31,#40284c);
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400
+}
+
+/**********************************/
+/******* 2.0 Content Styles *******/
+/**********************************/
+header {
+  text-align: center;
+}
+
+header .logo {
+  height: 32px;
+  box-sizing: content-box;
+}
+.content {
+  text-align: center;
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 380px;
+}
+.content h1 {
+  color: #fff;
+  font-size: 4em;
+  position: relative;
+  font-weight: 400;
+  margin: 10vh 1vw 2vh;
+  font-family: 'Baloo Bhaijaan',serif;
+}
+.content h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display',serif;
+}
+.content a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 12px 19px;
+  color: #fff;
+  display: inline-block;
+}
+.content a:hover {
+  opacity: 0.8;
+}
+.colorful {
+  background: linear-gradient(to right, #fddd10, #ff6c2c, #e5e, #2fabe1);
+  background-size: 2000%;
+  animation: gradientBackground 10s alternate ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/**********************************/
+/*******    3.0 Countdown   *******/
+/**********************************/
+#countdown {
+  margin: 13vh auto 10vh;
+  top: 5%;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 50%;
+}
+
+#countdown.show {
+  display: block;
+}
+
+#countdown > div {
+  position: relative;
+  float: left;
+  width: 25%;
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: .8em;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Baloo Bhaijaan',serif;
+}
+
+#countdown > div > span {
+  display: block;
+  font-size: 1.2vw;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin-top: 20px;
+  color: #fff;
+  text-transform: lowercase
+}
+
+@media (max-width:480px) {
+    #countdown {
+        width: 100%;
+    }
+    #countdown > div {
+        width: 25%;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: .8em;
+        letter-spacing: 2px;
+    }
+    #countdown > div > span {
+      font-size: 11px;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('reset.css');
+
+.slider-heading-btns a.download-btn {
+    padding: 17px 48px;
+    background-color: #3464e0;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 2px solid#3464e0;
+    border-radius: 5px;
+    transition:all .3s ease-in;
+    display: inline-block;
+}
+.slider-heading-btns a.download-btn:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+.slider-heading-btns a.download-btn.download-btn-2 {
+    padding: 17px 56px;
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+    margin: 0px 0px 0px 40px;
+}
+.slider-heading-btns a.download-btn.download-btn-2:hover {
+    background-color: #3464e0;
+    color: #ffffff;
+    border-color: #3464e0;
+}
+
+
+.slider-heading,
+.slider-heading2 {
+    text-align: left
+}
+.slider-heading-content {
+    text-align: left
+}
+.slider-heading {
+    font-size: 54px;
+    font-weight: 600;
+    position: absolute;
+    left: 15%;
+    margin-right: 10%;
+    top: 25%;
+    line-height: 60px;
+}
+.slider-heading-content {
+    font-size: 24px;
+    position: absolute;
+    left: 15%;
+    margin-right: 10%;
+    top: 45%;
+    line-height: 36px;
+}
+.slider-heading-content span {
+    color: #03f5f9;
+}
+.slider-heading-content span.clo {
+    color: #f85d1c;
+}
+.slider-heading-btns {
+    position: absolute;
+    left: 15%;
+    margin-right: 10%;
+    top: 56%;
+    margin: 50px 0px 0px 0px;
+}
+
+
+
+.slider-image0,
+.slider-image1 {
+    position: absolute;
+    bottom: 10%;
+    right:10%;
+}
+
+.slider-image2 {
+    position: absolute;
+    bottom: 50%;
+    left: 10%
+}
+
+.slider-image3 {
+    position: absolute;
+    bottom: 10%;
+    left: 30%
+}
+
+.slider-image4 {
+    position: absolute;
+    bottom: 30%;
+    left: 30%
+}
+
+.content {
+    position: relative;
+    top: 450px;
+    text-align: center
+}
+
+
+@media screen and (max-width:830px) {
+    .slider-content {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        top: auto;
+        bottom: 10px;
+        padding: 5px 0
+    }
+    .one-by-one-slider-large li img {
+        width: 100%
+    }
+    .slider-content div {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px
+    }
+    .slider-image1,
+    .slider-image2,
+    .slider-image3,
+    .slider-image4,
+    .slider-heading,
+    .slider-heading2,
+    .slider-heading3 {
+        position: relative;
+        left: 5%;
+        right: 5%;
+        top: 10%
+    }
+    .slider-image0 {
+        position: relative;
+        max-width: 150px
+    }
+    .slider-image1,
+    .slider-image2,
+    .slider-image3,
+    .slider-image4 {
+        max-width: 300px
+    }
+    .slider-image4 {
+        padding-bottom: 75px
+    }
+    .header h1 {
+        font-size: 20px;
+        line-height: 20px
+    }
+    .content {
+        top: 350px
+    }
+    .content h2 {
+        font-size: 20px;
+        line-height: 20px
+    }
+}
+

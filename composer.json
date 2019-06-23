@@ -1,0 +1,6 @@
+{
+    "require": {
+        "planetteamspeak/ts3-php-framework": "^1.1",
+        "stripe/stripe-php": "^6.30"
+    }
+}

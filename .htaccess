@@ -1,0 +1,75 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+    RewriteBase /
+
+    #Auth
+    RewriteRule ^login?$ index.php?m=login [L]
+    RewriteRule ^register?$ index.php?m=register [L]
+    RewriteRule ^logout?$ index.php?m=logout [L]
+    RewriteRule ^passwort_reset?$ index.php?m=forgot_password [L]
+    RewriteRule ^passwort_reset/([A-Za-z0-9-]+)?$ index.php?m=forgot_password&key=$1 [NC,L]
+
+	#Rechts Stuff
+	RewriteRule ^agb?$ index.php?m=agb [L]
+	RewriteRule ^impressum?$ index.php?m=impressum [L]
+	RewriteRule ^datenschutz?$ index.php?m=datenschutz [L]
+
+	#Front Page
+	RewriteRule ^teamspeak?$ index.php?m=teamspeak [L]
+	RewriteRule ^musikbot?$ index.php?m=musikbot [L]
+	RewriteRule ^webhosting?$ index.php?m=webhosting [L]
+	
+    #Team Logout
+    RewriteRule ^team_logout?$ index.php?m=team_logout [L]
+
+    #Dashboard
+    RewriteRule ^/?$ index.php?m=main_page [L]
+    RewriteRule ^dashboard?$ index.php?m=index [L]
+    RewriteRule ^profil?$ index.php?m=profil [L]
+    RewriteRule ^a/([A-Za-z0-9-]+)?$ index.php?m=affiliate_click&id=$1 [NC,L]
+    RewriteRule ^service/list?$ index.php?m=service_list [L]
+    RewriteRule ^service/order?$ index.php?m=service_order [L]
+
+    #Support
+    RewriteRule ^support?$ index.php?m=support [L]
+    RewriteRule ^support/([A-Za-z0-9-]+)?$ index.php?m=support_manage&id=$1 [NC,L]
+
+    #Payments
+    RewriteRule ^guthaben/aufladen?$ index.php?m=pay_now [L]
+    RewriteRule ^guthaben/aufladen/erfolgreich?$ index.php?m=pay_now&payment=done [L]
+    RewriteRule ^account/payments?$ index.php?m=payments [L]
+    #RewriteRule ^zahlungsverlauf?$ index.php?m=zahlungsverlauf [L]
+    #RewriteRule ^bestellungen?$ index.php?m=bestellungen [L]
+    RewriteRule ^rechnung/([A-Za-z0-9-]+)?$ index.php?m=invoice&id=$1 [NC,L]
+
+    #RadioBots
+    #RewriteRule ^radiobots?$ index.php?m=voicebots [L]
+    RewriteRule ^musikbot/order?$ index.php?m=voicebot_order [L]
+    RewriteRule ^musikbot/([A-Za-z0-9-]+)?$ index.php?m=voicebot_manage&id=$1 [NC,L]
+    RewriteRule ^musikbot/([A-Za-z0-9-]+)/renew?$ index.php?m=voicebot_renew&id=$1 [NC,L]
+    RewriteRule ^musikbot/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$ index.php?m=voicebot_manage&id=$1&menu=$2 [NC,L]
+
+    #Teamspeak
+    #RewriteRule ^teamspeaks?$ index.php?m=teamspeaks [L]
+    RewriteRule ^teamspeak/order?$ index.php?m=teamspeak_order [L]
+    RewriteRule ^teamspeak/([A-Za-z0-9-]+)?$ index.php?m=teamspeak_manage&id=$1 [NC,L]
+    RewriteRule ^teamspeak/([A-Za-z0-9-]+)/renew?$ index.php?m=teamspeak_renew&id=$1 [NC,L]
+    RewriteRule ^teamspeak/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$ index.php?m=teamspeak_manage&id=$1&menu=$2 [NC,L]
+
+    #Team
+    RewriteRule ^team/users?$ index.php?m=team_users [L]
+    RewriteRule ^team/user/([A-Za-z0-9-]+)?$ index.php?m=team_user&id=$1 [NC,L]
+
+    RewriteRule ^team/settings?$ index.php?m=team_settings [L]
+    RewriteRule ^team/settings/([A-Za-z0-9-]+)?$ index.php?m=team_settings_manage&menu=$1 [NC,L]
+
+    RewriteRule ^team/tickets?$ index.php?m=team_tickets [L]
+    RewriteRule ^team/support/([A-Za-z0-9-]+)?$ index.php?m=team_ticket&id=$1 [NC,L]
+    RewriteRule ^team/transactions?$ index.php?m=team_transactions [L]
+
+</IfModule>
+<Files 403.shtml>
+    order allow,deny
+    allow from all
+</Files>
