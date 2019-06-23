@@ -16,3 +16,5 @@ Dieses Interface benutzen:
 ════════════════════════════════════════════════════
 
 So und jetzt folge mir auf Twitter https://twitter.com/realHerrSammy <3 :D
+
+# INFO: ICH GEBE HIERZU KEINEN SUPPORT!
