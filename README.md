@@ -3,9 +3,9 @@
 Hier habt ihr das gesamte Webinterface + Frontpage!
 Es ist ein Hosting Interface für TeamSpeak Server und Musikbots.
 
-════════════════════════════════════════════════════
-
 Ich habe alle rechte um dieses Interface zu veröffentlichen, da ich es selbst gekauft habe.
+
+════════════════════════════════════════════════════
 
 Dieses Interface benutzen:
 - NXTByte.net
